@@ -22,12 +22,11 @@ public class ItemController extends HttpServlet {
     @Resource(name = "jdbc/item")
     private DataSource datasource;
 
-    private ItemService itemService; // instance واحد فقط
+    private ItemService itemService;
 
     @Override
     public void init() throws ServletException {
         super.init();
-        // إنشاء الـ service مرة واحدة عند تهيئة الـ Servlet
         itemService = new ItemServiceImpl(datasource);
     }
 

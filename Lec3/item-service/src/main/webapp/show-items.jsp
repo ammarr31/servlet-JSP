@@ -136,7 +136,7 @@
     <h1>Items Management</h1>
 
     <div class="actions">
-        <a href="addItem.jsp" class="btn btn-add">+ Add Item</a>
+        <a href="addItem.html" class="btn btn-add">+ Add Item</a>
     </div>
 	<%
 	List<Item> items = (List<Item>) request.getAttribute("items");

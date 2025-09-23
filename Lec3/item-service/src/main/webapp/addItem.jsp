@@ -57,7 +57,7 @@
             font-weight: 600;
             font-size: 15px;
             cursor: pointer;
-            background: #3498db;
+            background: #7131ad;
             color: #fff;
             transition: 0.3s;
         }

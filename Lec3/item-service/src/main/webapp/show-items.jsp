@@ -42,7 +42,7 @@
         }
 
         .btn-add {
-            background: #3498db;
+            background: #7131ad;
             color: #fff;
             text-decoration: none;
         }
@@ -52,9 +52,16 @@
         }
 
         .btn-edit {
-            background: #27ae60;
-            color: #fff;
-            text-decoration: none;
+            display: block;
+		  padding-top : 5px;
+		  height: 28px;
+		  width: 70px;
+		  background-color: #7131ad;
+		  border: none;
+		  border-radius: 4px;
+		  color: #eee;
+		  cursor: pointer;
+		  text-decoration: none;
         }
 
         .btn-edit:hover {
@@ -62,9 +69,16 @@
         }
 
         .btn-delete {
-            background: #e74c3c;
-            color: #fff;
-            text-decoration: none;
+            display: block;
+              padding-top : 5px;
+			  height: 28px;
+			  width: 70px;
+			  background-color: #7131ad;
+			  border: none;
+			  border-radius: 4px;
+			  color: #eee;
+			  cursor: pointer;
+			  text-decoration: none;
         }
 
         .btn-delete:hover {
@@ -81,8 +95,10 @@
         }
 
         thead {
-            background: #3498db;
-            color: #fff;
+            background-color: #7131ad;
+			  border-radius: 15px;
+			  color: #eee;
+			  height: 50px;
         }
 
         thead th {
@@ -93,8 +109,9 @@
         }
 
         tbody tr {
-            border-bottom: 1px solid #ddd;
-            transition: background 0.2s ease;
+            background-color: #eee;
+			  color: #000000;
+			  height: 50px;
         }
 
         tbody tr:hover {
@@ -145,8 +162,8 @@
 		            <td>$<%=item.getPrice() %></td>
 		            <td><%=item.getTotalNumber() %></td>
 		            <td>
-		                <a href="/item-service/ItemController?action=show-item&id=<%=item.getId() %>">Edit</a>
-		                <a href="/item-service/ItemController?action=delete-item&id=<%=item.getId() %>">Delete</a>
+		                <a class="btn-edit" href="/item-service/ItemController?action=show-item&id=<%=item.getId() %>">Edit</a>
+		                <a class="btn-delete" href="/item-service/ItemController?action=delete-item&id=<%=item.getId() %>">Delete</a>
 		            </td>
 		        </tr>
 		<%
